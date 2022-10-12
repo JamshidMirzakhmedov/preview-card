@@ -1,0 +1,100 @@
+/* General styles
+--------------------------- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 100px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+h1,
+h2 {
+  font-family: "Fraunces", serif;
+}
+h2,
+h3,
+p {
+  color: hsla(229, 21%, 50%, 0.747);
+}
+h3 {
+  letter-spacing: 10px;
+}
+p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+h2 > span {
+  text-decoration: line-through;
+  font-size: 13px;
+}
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+button > span {
+  margin-left: 10px;
+}
+
+/* General styles
+--------------------------- */
+.container-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+  background-color: hsl(30, 38%, 92%);
+}
+.card {
+  display: flex;
+  width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 100%);
+}
+.card-img img {
+  display: inline;
+  width: 300px;
+}
+.card-details {
+  padding: 25px 30px;
+}
+
+@media screen and (max-width: 375px) {
+  .container-wrap {
+    height: 100%;
+    display: block;
+    padding: 8% 0;
+  }
+  .card {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .card-img img {
+    width: 100%;
+    height: 300px;
+  }
+  .card-details {
+    padding: 12px;
+  }
+}
